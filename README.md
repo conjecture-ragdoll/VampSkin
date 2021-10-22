@@ -1,28 +1,30 @@
-[Currently in development mode starting on October 22, 2021]
-
-
-Never fear! Save time trying to plan when to do your next skincare ritual,
-and instead plan it in advanced based on your own skin behaviors 
-tracked around your menstralCycle. Have it ready just by the convenience of your Android phone.
-
-Did you know our menstral cycle makes us vulnerable to side effects such as excess oilyness at certain times of the month? Or even dehydrated looking skin.  These changes can compramise our skin barrier, leading to acne or textured skin overall.
-
-Sometimes working with the same skincare all throughout the month isn't the best for the healthiest skin. But thinking about 
-it all the time can be stressful and take time away from our priorities.
-
-Simply tap your symptoms for our program to learn how your skin behaves throughout the month.
-Have a simple and customized routine with fewer and more potent actives that's right for your skin.
+~Currently in development mode starting on October 22, 2021~
 
 
 
 
+Never fear! Save time dwelling over when to do your next chemical peel or treating too agressively acne ahead of time. 
+
+
+Everyone has their own unique menstral cycle. That also means everyone's skin behaves differently. Thanks to hormones, it makes us vulnerable to unwanted side effects such as excess or even dehydrated looking skin. These changes can compramise our skin barrier, leading to acne or rough textured skin overall.
+
+Sometimes using the same active in your favorite form of formulation isn't the best for your skin's health. But thinking about it all the time can be stressful and take time away from our priorities.
+
+Simply tap your symptoms throughout your cycle, and we will generate a customized routine with fewer and more potent actives that's right for your skin.
+
+
+Disclaimer:
+This is not a replacement for medical advice. This is also not intended to treat any life threatening diseases. This application is purely just to reccomend advice. Please consult your doctor, and remember to keep up with the sunscreen. 
 
 
 
-Technologies used so far:
 
 
-Google Calendar API - Add reminders for rituals:
+
+
+Technologies to be considered with this application:
+
+Add reminders for rituals - Google Calendar API:
 https://developers.google.com/calendar/api
 
 User Interface - flutter:
@@ -31,10 +33,16 @@ https://flutter.dev/docs
 Unit Testing Framework - JUnit:
 https://junit.org/junit5/docs/current/user-guide/junit-user-guide-5.8.1.pdf
 
+
+.
+.
+.
+.
+
 INCI list database API - actives/ reccomendations
 ??? - Product reccomendations [To be determined]
 
-Android App developer
+Android App developer [To be determined]
 
 
 
@@ -43,78 +51,15 @@ Android App developer
 
 
 
-MenstralCycle will be implemented as a modular array 
-
-Dayta[] menstralCycle:
-    -{Cycle Length in Days} number of nodes
-        -Node data: Day #, Skincare Ritual, Logged Symptoms
-    -References: Period, Folicular Phase, Ovulation, Luteal Phase
-
-
-
-User's Perks:
-
-Possible Skin concerns:
-    -Acne
-    -Fine lines 
-    -Oily skin
-    -Extreme dryness
-    -Dullness
-    -Discoloration
-    -Acne scarring (icepick, boxcar, rolling or hypertrophic)
-
-Log symptoms:
-
-Possible Symptoms:
-    -Oily skin
-    -Congested skin
-    -Acne breakouts (Forehead, cheeks, chin/jawline)
-    -Dry skin
-    -Itchy skin
-    -Flakey skin
-    -None! 
-    -Other
-
-Log period date + end
-Repeat until next period to gather cycle data
-
-Data recieved:
-    -Number of days of period
-    -Cycle length
-
-Skincare reccomendations based on concerns:
-    -Sunscreen      // A must for healthy skin!
-    -Skin barrier repair: moisturizers
-    -Fungal acne protocol
-    -Spot treatments
-    -Chemical exfoliation
-    -LED light therapy
-    -Dermaplanning
-    -Retin-A
-    -Skincare actives: --------See later---------
-    -Chemical peels
-    -Microneedling 0.2, 0.25, 0.5, 0.75
-
-Skincare supplements:
-    -B5
-    -Zinc
-
-Skincare Actives:
-    Acne:
-
-    Dry Skin:
-
-    Oily Skin:
-
-    Fine lines:
 
 
 
 
 FAQ:
-
 Coming soon!
 
 Contact info:
 Flora Afroza
-afzflora@gmail.comVampSkin
+:email:afzflora@gmail.com
+
+~VampSkin is open source, feel free to ask me questions :)

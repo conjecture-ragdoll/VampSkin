@@ -1,0 +1,66 @@
+MenstralCycle will be implemented as a modular array 
+
+Dayta[] menstralCycle:
+    -{Cycle Length in Days} number of nodes
+        -Node data: Day #, Skincare Ritual, Logged Symptoms
+    -References: Period, Folicular Phase, Ovulation, Luteal Phase
+
+
+
+User's Perks:
+
+Target Possible Skin concerns:
+    -Acne
+    -Fine lines 
+    -Oily skin
+    -Extreme dryness
+    -Dullness
+    -Discoloration
+    -Acne scarring (icepick, boxcar, rolling or hypertrophic)
+
+Log symptoms:
+
+Possible Symptoms:
+    -Oily skin
+    -Congested skin
+    -Acne breakouts (Forehead, cheeks, chin/jawline)
+    -Dry skin
+    -Itchy skin
+    -Flakey skin
+    -None! 
+    -Other
+
+Log period date + end
+Repeat until next period to gather cycle data
+
+Data recieved:
+    -Number of days of period
+    -Cycle length
+
+Skincare reccomendations based on concerns:
+    -Sunscreen      // A must for healthy skin!
+    -Skin barrier repair: moisturizers
+    -Fungal acne protocol
+    -Spot treatments
+    -Chemical exfoliation
+    -LED light therapy
+    -Dermaplanning
+    -Retin-A
+    -Skincare actives: --------See later---------
+    -Chemical peels
+    -Microneedling 0.2, 0.25, 0.5, 0.75
+
+Skincare supplements:
+    -B5
+    -Zinc
+
+Skincare Actives: [Retrieve from database]
+    Acne:
+
+    Dry Skin:
+
+    Oily Skin:
+
+    Fine lines:
+
+Allergy flags "
