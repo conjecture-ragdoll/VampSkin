@@ -8,7 +8,7 @@ https://junit.org/junit5/docs/current/user-guide/junit-user-guide-5.8.1.pdf
 public class UnitTesting {
 
 
- public static void test(String[]) {
+ public static void test(String[] args) {
 
 
 

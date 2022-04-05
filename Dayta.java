@@ -6,7 +6,7 @@ public class Dayta extends Ritual {
 
     protected int dayNumber = 0;
     protected Ritual AM;
-    protected Ritual PM = new Ritual();    // Treatment Rituals can be at night 
+    protected Ritual PM;    // Treatment Rituals can be at night 
     protected String[] loggedSymptoms = {};  // User logs indices corresponding to elements belonging to Array symptoms[]
 
 
@@ -57,6 +57,17 @@ public class Dayta extends Ritual {
         return this.loggedSymptoms;
     }
 
+
+    public void gatherSymptoms() {
+        
+    }
+/*
+    public void logSymptoms(int dayNum) {   // make part of dayta instead?
+        for(String symptom : this.symptoms) {
+
+        }
+    }
+*/
     public String toString() {   
         return "~ Day " + this.dayNumber + " ~\nAM Routine: \n" + this.AM + "\nPM Routine: \n" + this.PM; 
     }
