@@ -4,12 +4,13 @@ public class Ritual {
     protected String facewash = "";
     protected String actives = "";
     protected String moisturizer = "";
-    protected String treatment;
+    protected String treatment = "";
 
     public Ritual() {    
         this.facewash = this.facewash;
         this.actives = this.actives;
         this.moisturizer = this.moisturizer;
+        this.treatment = this.treatment;
     }
 
     public Ritual(String fw, String acts, String moist) {
@@ -26,9 +27,6 @@ public class Ritual {
     }
 
     public Ritual(String treat) {
-        this.facewash = this.facewash;
-        this.actives = this.actives;
-        this.moisturizer = this.moisturizer;
         this.treatment = treat;
     }
 

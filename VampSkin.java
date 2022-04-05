@@ -1,11 +1,13 @@
 import java.lang.String;
+import java.util.HashMap;
+
 
 public class VampSkin extends Dayta {
 
 /*** 
 
-Track period date and Skin behaviors throughout the month
-Reccomend custom skincare routine
+Track period date and skin behaviors throughout the month
+while also doing your rituals during the most barrier friendly times
 
 Coming Soon: Import products from INCI api database as suggestions for skin concerns
 
@@ -22,12 +24,7 @@ Coming Soon: Import products from INCI api database as suggestions for skin conc
                         "Acne scarring",
                     };
 
-    protected static String[] treatments = 
-                    {
-                        "Chemical Exfoliation",
-                        "Dermaplanning",    // 2x month
-                        "Chemical Peel"    
-                    };
+    protected static HashMap<String, Integer> treatments = new HashMap<>();     // Treatments and frequency 
 
     protected static String[] symptoms = 
                     { 
@@ -43,7 +40,7 @@ Coming Soon: Import products from INCI api database as suggestions for skin conc
 
     private int cycleLength;
     private Dayta[] menstralCycle;
-    private int treatDayFrequency;      // # of reccomended treatments throughout cycle, prevent overcompramising skin barrier
+    // Reset menstralCycle Array when user logs period 
     
 
     public VampSkin(Dayta[] monthlyCycle) {
@@ -72,40 +69,27 @@ Coming Soon: Import products from INCI api database as suggestions for skin conc
         return this.menstralCycle;
     }
 
-    public Dayta getDayta(int dayNum) {
-        return this.menstralCycle[dayNum];
+    public Dayta getDayta(int dayIndex) {
+        return this.menstralCycle[dayIndex];
     }
 
     // log date of period
     public void logPeriodStart() {
-        // Date
+        // Date, update local calendar, reset menstralCycle[], track previous cycleLength
     }
 
     // log end date of period
-    public void logPeriodEnd(int cycleIndex) { // folicular phase
+    public void logPeriodEnd(int dayIndex) { // folicular phase
         // Date
-        this.cycleLength = cycleIndex;
+        this.cycleLength = dayIndex;
     }
 
-    public void gatherSymptoms() {
-        
-    }
-
-    public void logSymptoms(int dayNum) {
-        for(String symptom : this.symptoms) {
-
-        }
-    }
-
-    public void setTreatmentDay(int dayStart, int frequency, String treat) {     // PM treatments for better collagen production
-        this.menstralCycle[dayStart]
-        .getPMRitual()
+    public void addTreatmentDay(String treat, int dayIndex) {     // PM treatments for better collagen production
+        this.menstralCycle[dayIndex].PM
         .setTreatment(treat);
     }
 
-    public void setTreatDayFrequency(int daysApart) {
-        this.treatDayFrequency = this.cycleLength / daysApart;  // Make each TreatmentRitual have it's own treatDay frequency?
-    }
+
 
 
     // TODO: Build Routine add to String
